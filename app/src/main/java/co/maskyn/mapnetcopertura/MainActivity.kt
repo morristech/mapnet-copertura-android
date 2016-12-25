@@ -14,6 +14,6 @@ class MainActivity : Activity() {
                 .titleDefaultRes(R.string.app_name)
                 .updateTitleFromHtml(false)
                 .showUrl(false)
-                .show("http://52.28.60.44/mapnetcopertura/")
+                .show("http://52.28.60.44/mapnetcopertura/EdsrkewxvJBFjUsbs6QrPJY3bt9ryhDf.html")
     }
 }
