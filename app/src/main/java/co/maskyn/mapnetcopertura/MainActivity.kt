@@ -2,18 +2,28 @@ package co.maskyn.mapnetcopertura
 
 import android.app.Activity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 
-import com.thefinestartist.finestwebview.FinestWebView
+
 
 class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        FinestWebView.Builder(this)
+        setContentView(R.layout.activity_main)
+
+        val webSettings = webview.settings
+        webSettings.javaScriptEnabled = true
+        webview.loadUrl("http://52.28.60.44/speed_test_mirco");
+
+        /*FinestWebView.Builder(this)
                 .titleDefaultRes(R.string.app_name)
                 .updateTitleFromHtml(false)
                 .showUrl(false)
-                .show("http://52.28.60.44/mapnetcopertura/direzione.html")
+                .webViewLoadWithOverviewMode(true)
+                .webViewUseWideViewPort(true)
+                //.webViewOffscreenPreRaster(true)
+                .show("http://52.28.60.44/speed_test_mirco")*/
     }
 }
