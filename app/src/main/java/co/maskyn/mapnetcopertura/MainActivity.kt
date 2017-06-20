@@ -13,9 +13,8 @@ class MainActivity : Activity() {
 
         setContentView(R.layout.activity_main)
 
-        val webSettings = webview.settings
-        webSettings.javaScriptEnabled = true
-        webview.loadUrl("http://52.28.60.44/speed_test_mirco");
+        webview.settings.javaScriptEnabled = true
+        webview.loadUrl("http://52.28.60.44/speed_test_senza_limiti");
 
         /*FinestWebView.Builder(this)
                 .titleDefaultRes(R.string.app_name)
